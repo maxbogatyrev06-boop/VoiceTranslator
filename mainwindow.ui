@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VoiceTranslator</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <property name="spacing">
+     <number>8</number>
+    </property>
+    <property name="leftMargin">
+     <number>12</number>
+    </property>
+    <property name="topMargin">
+     <number>12</number>
+    </property>
+    <property name="rightMargin">
+     <number>12</number>
+    </property>
+    <property name="bottomMargin">
+     <number>12</number>
+    </property>
+
+    <!-- ================================================ -->
+    <!-- ВЕРХНЯЯ ПАНЕЛЬ: аватар + имя -->
+    <!-- ================================================ -->
+    <item>
+     <layout class="QHBoxLayout" name="topBarLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+
+      <!-- Кнопка с аватаром (иконка профиля) -->
+      <item>
+       <widget class="QPushButton" name="profileButton">
+        <property name="minimumSize">
+         <size>
+          <width>44</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>44</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #2a82da;
+    color: white;
+    border-radius: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+QPushButton:hover {
+    background-color: #1e6bb8;
+}</string>
+        </property>
+        <property name="text">
+         <string>👤</string>
+        </property>
+        <property name="toolTip">
+         <string>Мой профиль</string>
+        </property>
+       </widget>
+      </item>
+
+      <!-- Имя пользователя -->
+      <item>
+       <widget class="QLabel" name="myNameLabel">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>username</string>
+        </property>
+       </widget>
+      </item>
+
+      <!-- Растяжка -->
+      <item>
+       <spacer name="topSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Поле поиска -->
+    <item>
+     <widget class="QLineEdit" name="searchEdit">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>38</height>
+       </size>
+      </property>
+      <property name="placeholderText">
+       <string>🔍  Поиск по никнейму...</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Фильтр по стране -->
+    <item>
+     <widget class="QComboBox" name="countryFilterCombo">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>34</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Заголовок списка -->
+    <item>
+     <widget class="QLabel" name="onlineLabel">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Онлайн:</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Список пользователей -->
+    <item>
+     <widget class="QListWidget" name="usersList">
+      <property name="styleSheet">
+       <string notr="true">QListWidget::item { padding: 8px; border-bottom: 1px solid #eee; }
+QListWidget::item:selected { background: #2a82da; color: white; }</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Статус -->
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #666;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Нижние кнопки -->
+    <item>
+     <widget class="QPushButton" name="randomButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>🎲  Найти случайного собеседника</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QPushButton" name="nearbyButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>46</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>👥  Разговор рядом</string>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menuBar"/>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

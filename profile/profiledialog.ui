@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProfileDialog</class>
+ <widget class="QDialog" name="ProfileDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Мой профиль</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>30</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>30</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Мой профиль</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="avatarLayout">
+     <item>
+      <spacer name="spacerLeft">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="avatarButton">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>120</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="toolTip">
+        <string>Нажмите, чтобы сменить аватарку</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #2a82da;
+    color: white;
+    border-radius: 60px;
+    font-size: 48px;
+    font-weight: bold;
+    border: 3px solid #4a9eea;
+}
+QPushButton:hover { background-color: #3a92ea; }</string>
+       </property>
+       <property name="text">
+        <string>?</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="spacerRight">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="avatarLabel">
+     <property name="visible">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label1">
+     <property name="text">
+      <string>Никнейм:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="usernameEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label2">
+     <property name="text">
+      <string>Дата рождения:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDateEdit" name="birthdateEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label3">
+     <property name="text">
+      <string>Страна:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="countryCombo">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label4">
+     <property name="text">
+      <string>Родной язык:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="languageCombo">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="saveButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Сохранить</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="logoutButton">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #c62828;
+border: none;
+background: transparent;
+text-decoration: underline;</string>
+     </property>
+     <property name="text">
+      <string>Выйти из аккаунта</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

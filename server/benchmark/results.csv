@@ -1,0 +1,10 @@
+﻿asr,translator,asr_text,asr_accuracy,asr_time,trans_text,trans_accuracy,trans_time,total_time
+Whisper base,MyMemory,Привет! Как у тебя дела? Я сегодня хорошо поработал!,100.0,2.132,Hi! How are you? I did a good job today!,59.5,1.443,3.576
+Whisper base,Argos,Привет! Как у тебя дела? Я сегодня хорошо поработал!,100.0,2.132,Hey! How are you? I did a good job today!,59.5,0.999,3.132
+Whisper base,NLLB,Привет! Как у тебя дела? Я сегодня хорошо поработал!,100.0,2.132,"Hey, how are you? I did a good job today!",59.5,7.143,9.275
+Vosk,MyMemory,привет как у тебя дела я сегодня хорошо поработал,100.0,2.394,hello how are you doing I did a good job today,100.0,1.144,3.537
+Vosk,Argos,привет как у тебя дела я сегодня хорошо поработал,100.0,2.394,"Hey, how you doing. I did a good job today.",70.8,0.056,2.45
+Vosk,NLLB,привет как у тебя дела я сегодня хорошо поработал,100.0,2.394,"Hey, how you doing? I did a good job today.",70.8,1.511,3.904
+Wav2Vec 2.0,MyMemory,привет как у тебя дела я сегодня хорошо поработал,100.0,5.283,hello how are you doing I did a good job today,100.0,1.169,6.451
+Wav2Vec 2.0,Argos,привет как у тебя дела я сегодня хорошо поработал,100.0,5.283,"Hey, how you doing. I did a good job today.",70.8,0.0,5.283
+Wav2Vec 2.0,NLLB,привет как у тебя дела я сегодня хорошо поработал,100.0,5.283,"Hey, how you doing? I did a good job today.",70.8,1.653,6.936

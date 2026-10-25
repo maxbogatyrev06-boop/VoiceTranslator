@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NearbyDialog</class>
+ <widget class="QDialog" name="NearbyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Разговор рядом</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog#NearbyDialog { background-color: #1a2233; }</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>12</number>
+   </property>
+   <property name="leftMargin">
+    <number>24</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>24</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: white;</string>
+     </property>
+     <property name="text">
+      <string>👥  Разговор рядом</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="hintLabel">
+     <property name="styleSheet">
+      <string notr="true">color: #8fa8c8;</string>
+     </property>
+     <property name="text">
+      <string>Передавайте микрофон друг другу. Язык определяется автоматически.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="langLayout">
+     <item>
+      <layout class="QVBoxLayout" name="leftLangLayout">
+       <item>
+        <widget class="QLabel" name="label1">
+         <property name="styleSheet">
+          <string notr="true">color: #8fa8c8;</string>
+         </property>
+         <property name="text">
+          <string>Мой язык:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="myLangCombo">
+         <property name="minimumSize">
+          <size><width>0</width><height>36</height></size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="rightLangLayout">
+       <item>
+        <widget class="QLabel" name="label2">
+         <property name="styleSheet">
+          <string notr="true">color: #8fa8c8;</string>
+         </property>
+         <property name="text">
+          <string>Язык собеседника:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="otherLangCombo">
+         <property name="minimumSize">
+          <size><width>0</width><height>36</height></size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label3">
+     <property name="styleSheet">
+      <string notr="true">color: #8fa8c8;</string>
+     </property>
+     <property name="text">
+      <string>Распознано:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="recognizedTextEdit">
+     <property name="minimumSize">
+      <size><width>0</width><height>120</height></size>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2a3a52; color: white; border: none; border-radius: 8px; padding: 8px;</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="label4">
+     <property name="styleSheet">
+      <string notr="true">color: #8fa8c8;</string>
+     </property>
+     <property name="text">
+      <string>Перевод:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="translatedTextEdit">
+     <property name="minimumSize">
+      <size><width>0</width><height>120</height></size>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #2a3a52; color: white; border: none; border-radius: 8px; padding: 8px;</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="minimumSize">
+      <size><width>0</width><height>28</height></size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #8fa8c8;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <layout class="QHBoxLayout" name="buttonsLayout">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <item>
+      <spacer name="leftBtnSpacer">
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       <property name="sizeHint" stdset="0">
+        <size><width>40</width><height>20</height></size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="micButton">
+       <property name="minimumSize">
+        <size><width>90</width><height>90</height></size>
+       </property>
+       <property name="maximumSize">
+        <size><width>90</width><height>90</height></size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #2a82da;
+    color: white;
+    border-radius: 45px;
+    font-size: 36px;
+    border: 3px solid #4a9eea;
+}
+QPushButton:hover { background-color: #3a92ea; }
+QPushButton:checked {
+    background-color: #e53935;
+    border: 3px solid #ff6b6b;
+}</string>
+       </property>
+       <property name="text">
+        <string>🎤</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="toolTip">
+        <string>Начать запись</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="endButton">
+       <property name="minimumSize">
+        <size><width>60</width><height>60</height></size>
+       </property>
+       <property name="maximumSize">
+        <size><width>60</width><height>60</height></size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #2a3a52;
+    color: white;
+    border-radius: 30px;
+    font-size: 22px;
+    border: none;
+}
+QPushButton:hover { background-color: #c62828; }</string>
+       </property>
+       <property name="text">
+        <string>✕</string>
+       </property>
+       <property name="toolTip">
+        <string>Завершить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="rightBtnSpacer">
+       <property name="orientation"><enum>Qt::Horizontal</enum></property>
+       <property name="sizeHint" stdset="0">
+        <size><width>40</width><height>20</height></size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

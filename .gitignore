@@ -1,0 +1,21 @@
+# Папка сборки Qt
+build/
+*.pro.user
+*.pro.user.*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+
+# Базы данных и пользовательские файлы
+server/users.db
+server/avatars/*
+!server/avatars/.gitkeep
+
+# Аудиозаписи
+recordings/
+
+# Скачанные модели (если они лежат в папке проекта)
+vosk_model/

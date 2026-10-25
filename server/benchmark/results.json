@@ -1,0 +1,101 @@
+[
+  {
+    "asr": "Whisper base",
+    "translator": "MyMemory",
+    "asr_text": "Привет! Как у тебя дела? Я сегодня хорошо поработал!",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.132,
+    "trans_text": "Hi! How are you? I did a good job today!",
+    "trans_accuracy": 59.5,
+    "trans_time": 1.443,
+    "total_time": 3.576
+  },
+  {
+    "asr": "Whisper base",
+    "translator": "Argos",
+    "asr_text": "Привет! Как у тебя дела? Я сегодня хорошо поработал!",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.132,
+    "trans_text": "Hey! How are you? I did a good job today!",
+    "trans_accuracy": 59.5,
+    "trans_time": 0.999,
+    "total_time": 3.132
+  },
+  {
+    "asr": "Whisper base",
+    "translator": "NLLB",
+    "asr_text": "Привет! Как у тебя дела? Я сегодня хорошо поработал!",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.132,
+    "trans_text": "Hey, how are you? I did a good job today!",
+    "trans_accuracy": 59.5,
+    "trans_time": 7.143,
+    "total_time": 9.275
+  },
+  {
+    "asr": "Vosk",
+    "translator": "MyMemory",
+    "asr_text": "привет как у тебя дела я сегодня хорошо поработал",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.394,
+    "trans_text": "hello how are you doing I did a good job today",
+    "trans_accuracy": 100.0,
+    "trans_time": 1.144,
+    "total_time": 3.537
+  },
+  {
+    "asr": "Vosk",
+    "translator": "Argos",
+    "asr_text": "привет как у тебя дела я сегодня хорошо поработал",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.394,
+    "trans_text": "Hey, how you doing. I did a good job today.",
+    "trans_accuracy": 70.8,
+    "trans_time": 0.056,
+    "total_time": 2.45
+  },
+  {
+    "asr": "Vosk",
+    "translator": "NLLB",
+    "asr_text": "привет как у тебя дела я сегодня хорошо поработал",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.394,
+    "trans_text": "Hey, how you doing? I did a good job today.",
+    "trans_accuracy": 70.8,
+    "trans_time": 1.511,
+    "total_time": 3.904
+  },
+  {
+    "asr": "Wav2Vec 2.0",
+    "translator": "MyMemory",
+    "asr_text": "привет как у тебя дела я сегодня хорошо поработал",
+    "asr_accuracy": 100.0,
+    "asr_time": 5.283,
+    "trans_text": "hello how are you doing I did a good job today",
+    "trans_accuracy": 100.0,
+    "trans_time": 1.169,
+    "total_time": 6.451
+  },
+  {
+    "asr": "Wav2Vec 2.0",
+    "translator": "Argos",
+    "asr_text": "привет как у тебя дела я сегодня хорошо поработал",
+    "asr_accuracy": 100.0,
+    "asr_time": 5.283,
+    "trans_text": "Hey, how you doing. I did a good job today.",
+    "trans_accuracy": 70.8,
+    "trans_time": 0.0,
+    "total_time": 5.283
+  },
+  {
+    "asr": "Wav2Vec 2.0",
+    "translator": "NLLB",
+    "asr_text": "привет как у тебя дела я сегодня хорошо поработал",
+    "asr_accuracy": 100.0,
+    "asr_time": 5.283,
+    "trans_text": "Hey, how you doing? I did a good job today.",
+    "trans_accuracy": 70.8,
+    "trans_time": 1.653,
+    "total_time": 6.936
+  }
+]

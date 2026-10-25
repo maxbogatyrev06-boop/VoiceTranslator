@@ -1,0 +1,10 @@
+﻿direction,asr,translator,asr_text,asr_accuracy,asr_time,trans_text,trans_accuracy,trans_time,total_time
+en-ru,Whisper base,MyMemory,"Hello, how are you doing? I did a good job today",100.0,2.098,"Здравствуйте, как дела? Я хорошо поработал сегодня",8.2,1.524,3.621
+en-ru,Whisper base,Argos,"Hello, how are you doing? I did a good job today",100.0,2.098,"Привет, как дела? Сегодня я проделал хорошую работу",6.5,0.824,2.922
+en-ru,Whisper base,NLLB,"Hello, how are you doing? I did a good job today",100.0,2.098,"Здравствуйте, как дела?",1.8,3.496,5.594
+en-ru,Vosk EN,MyMemory,hello how are you doing i get a good a good job today,80.4,2.103,"здравствуйте, как у вас дела? Сегодня я получаю хорошую работу",5.6,1.233,3.336
+en-ru,Vosk EN,Argos,hello how are you doing i get a good a good job today,80.4,2.103,"Здравствуйте, как вы делаете, я получаю хорошую работу сегодня",3.2,0.151,2.254
+en-ru,Vosk EN,NLLB,hello how are you doing i get a good a good job today,80.4,2.103,"Здравствуйте, как дела? Сегодня я получила хорошую работу.",3.5,1.762,3.866
+en-ru,Wav2Vec EN,MyMemory,HULLO HOW ARE YOU DOING I DITAGL A GOOD JOCK TO DAY,82.6,1.958,HULLO КАК У ТЕБЯ ДЕЛА I DITAGL A GOOD JOCK TO DAY,21.2,1.067,3.025
+en-ru,Wav2Vec EN,Argos,HULLO HOW ARE YOU DOING I DITAGL A GOOD JOCK TO DAY,82.6,1.958,"Хулло, как ты это делаешь, я проделываю хорошую работу сегодня",2.8,0.168,2.126
+en-ru,Wav2Vec EN,NLLB,HULLO HOW ARE YOU DOING I DITAGL A GOOD JOCK TO DAY,82.6,1.958,Как ты себя чувствуешь? Я расскажу тебе хорошую шутку каждый день.,2.2,1.903,3.861

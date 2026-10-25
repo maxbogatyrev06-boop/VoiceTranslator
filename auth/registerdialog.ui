@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterDialog</class>
+ <widget class="QDialog" name="RegisterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Регистрация</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>30</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>30</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="font">
+      <font>
+       <pointsize>16</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Создание аккаунта</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="emailEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="placeholderText">
+      <string>Email</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="phoneEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="placeholderText">
+      <string>Телефон (необязательно)</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="usernameEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="placeholderText">
+      <string>Никнейм</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="passwordEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Пароль</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="passwordConfirmEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string>Повторите пароль</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelBirthdate">
+     <property name="text">
+      <string>Дата рождения:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDateEdit" name="birthdateEdit">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+     <property name="displayFormat">
+      <string>dd.MM.yyyy</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelCountry">
+     <property name="text">
+      <string>Страна:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="countryCombo">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelLanguage">
+     <property name="text">
+      <string>Родной язык:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QComboBox" name="languageCombo">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>36</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="registerButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Зарегистрироваться</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="backButton">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #2a82da; text-decoration: underline; border: none; background: transparent;</string>
+     </property>
+     <property name="text">
+      <string>← Назад ко входу</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="statusLabel">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: red;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

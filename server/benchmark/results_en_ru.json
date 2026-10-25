@@ -1,0 +1,110 @@
+[
+  {
+    "direction": "en-ru",
+    "asr": "Whisper base",
+    "translator": "MyMemory",
+    "asr_text": "Hello, how are you doing? I did a good job today",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.098,
+    "trans_text": "Здравствуйте, как дела? Я хорошо поработал сегодня",
+    "trans_accuracy": 8.2,
+    "trans_time": 1.524,
+    "total_time": 3.621
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Whisper base",
+    "translator": "Argos",
+    "asr_text": "Hello, how are you doing? I did a good job today",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.098,
+    "trans_text": "Привет, как дела? Сегодня я проделал хорошую работу",
+    "trans_accuracy": 6.5,
+    "trans_time": 0.824,
+    "total_time": 2.922
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Whisper base",
+    "translator": "NLLB",
+    "asr_text": "Hello, how are you doing? I did a good job today",
+    "asr_accuracy": 100.0,
+    "asr_time": 2.098,
+    "trans_text": "Здравствуйте, как дела?",
+    "trans_accuracy": 1.8,
+    "trans_time": 3.496,
+    "total_time": 5.594
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Vosk EN",
+    "translator": "MyMemory",
+    "asr_text": "hello how are you doing i get a good a good job today",
+    "asr_accuracy": 80.4,
+    "asr_time": 2.103,
+    "trans_text": "здравствуйте, как у вас дела? Сегодня я получаю хорошую работу",
+    "trans_accuracy": 5.6,
+    "trans_time": 1.233,
+    "total_time": 3.336
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Vosk EN",
+    "translator": "Argos",
+    "asr_text": "hello how are you doing i get a good a good job today",
+    "asr_accuracy": 80.4,
+    "asr_time": 2.103,
+    "trans_text": "Здравствуйте, как вы делаете, я получаю хорошую работу сегодня",
+    "trans_accuracy": 3.2,
+    "trans_time": 0.151,
+    "total_time": 2.254
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Vosk EN",
+    "translator": "NLLB",
+    "asr_text": "hello how are you doing i get a good a good job today",
+    "asr_accuracy": 80.4,
+    "asr_time": 2.103,
+    "trans_text": "Здравствуйте, как дела? Сегодня я получила хорошую работу.",
+    "trans_accuracy": 3.5,
+    "trans_time": 1.762,
+    "total_time": 3.866
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Wav2Vec EN",
+    "translator": "MyMemory",
+    "asr_text": "HULLO HOW ARE YOU DOING I DITAGL A GOOD JOCK TO DAY",
+    "asr_accuracy": 82.6,
+    "asr_time": 1.958,
+    "trans_text": "HULLO КАК У ТЕБЯ ДЕЛА I DITAGL A GOOD JOCK TO DAY",
+    "trans_accuracy": 21.2,
+    "trans_time": 1.067,
+    "total_time": 3.025
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Wav2Vec EN",
+    "translator": "Argos",
+    "asr_text": "HULLO HOW ARE YOU DOING I DITAGL A GOOD JOCK TO DAY",
+    "asr_accuracy": 82.6,
+    "asr_time": 1.958,
+    "trans_text": "Хулло, как ты это делаешь, я проделываю хорошую работу сегодня",
+    "trans_accuracy": 2.8,
+    "trans_time": 0.168,
+    "total_time": 2.126
+  },
+  {
+    "direction": "en-ru",
+    "asr": "Wav2Vec EN",
+    "translator": "NLLB",
+    "asr_text": "HULLO HOW ARE YOU DOING I DITAGL A GOOD JOCK TO DAY",
+    "asr_accuracy": 82.6,
+    "asr_time": 1.958,
+    "trans_text": "Как ты себя чувствуешь? Я расскажу тебе хорошую шутку каждый день.",
+    "trans_accuracy": 2.2,
+    "trans_time": 1.903,
+    "total_time": 3.861
+  }
+]
